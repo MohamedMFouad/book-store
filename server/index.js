@@ -1,10 +1,6 @@
-const http = require('http');
+const express = require('express')
+const app = express();
 
-const server = http.createServer();
+app.use(express.static('../client'));
 
-server.on('request',(req, res)=>{
-    res.write("hola");
-    res.end();
-});
-
-server.listen(8070);
+app.listen(8080)
