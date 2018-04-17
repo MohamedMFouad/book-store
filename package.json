@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "webpack": "webpack -wd",
-    "nodemon": "./node_modules/.bin/nodemon server/index.js"
+    "nodemon": "./node_modules/.bin/nodemon --exec babel-node server/index.js"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +16,10 @@
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "express": "^4.16.3"
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
   },
   "devDependencies": {
     "nodemon": "^1.17.3",
